@@ -1,7 +1,8 @@
 #include "libft/h"
 int ft_strlen(char *str)
 {
-    static int i = 0;
+    static int i;
+    
     if(!str)
         return -1;
     if(str[i++] != '\0')
